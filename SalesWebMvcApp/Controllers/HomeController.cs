@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SalesWebMvcApp.Models.ViewModels;
 using System.Diagnostics;
+using SalesWebMvcApp.Models.ViewModels;
 
 namespace SalesWebMvcApp.Controllers
 {
@@ -33,7 +33,7 @@ namespace SalesWebMvcApp.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new SalesWebMvcApp.Models.ViewModels.ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
