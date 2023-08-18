@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using SalesWebMvcApp.Models;
 
-namespace SalesWebMvcApp.Data
+namespace SalesWebMvcApp.Models
 {
     public class SalesWebMvcAppContext : DbContext
     {
-        public SalesWebMvcAppContext (DbContextOptions<SalesWebMvcAppContext> options)
+        public SalesWebMvcAppContext(DbContextOptions<SalesWebMvcAppContext> options)
             : base(options)
         {
         }
 
-        public DbSet<SalesWebMvcApp.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
     }
 }

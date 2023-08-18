@@ -2,8 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SalesWebMvcApp.Data;
+using SalesWebMvcApp.Models;
 
 namespace SalesWebMvcApp.Migrations
 {
