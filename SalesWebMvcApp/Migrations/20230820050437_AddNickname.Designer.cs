@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SalesWebMvcApp.Models;
 
 namespace SalesWebMvcApp.Migrations
 {
     [DbContext(typeof(SalesWebMvcAppContext))]
-    partial class SalesWebMvcAppContextModelSnapshot : ModelSnapshot
+    [Migration("20230820050437_AddNickname")]
+    partial class AddNickname
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

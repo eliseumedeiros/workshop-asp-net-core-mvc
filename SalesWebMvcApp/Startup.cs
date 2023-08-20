@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvcApp.Models;
 using SalesWebMvcApp.Data;
+using SalesWebMvcApp.Services;
 
 namespace SalesWebMvcApp
 {
@@ -37,6 +38,7 @@ namespace SalesWebMvcApp
                     builder.MigrationsAssembly("SalesWebMvcApp")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
 
         }
 

@@ -62,7 +62,7 @@ namespace SalesWebMvcApp.Migrations
 
                     b.Property<int?>("DepartmentId");
 
-                    b.Property<string>("MyProperty");
+                    b.Property<string>("Name");
 
                     b.Property<string>("email");
 
