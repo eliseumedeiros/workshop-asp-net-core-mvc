@@ -1,4 +1,3 @@
-using System;
 
 namespace SalesWebMvcApp.Models.ViewModels
 {
